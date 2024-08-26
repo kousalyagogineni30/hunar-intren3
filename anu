@@ -1,0 +1,115 @@
+ques1=['A. Blue', 'B. Red', 'C. Green', 'D. Yellow']
+ques2=['A. Solvent', 'B. Saltwater', 'C. Saliva', 'D. Syrup']
+ques3=['A. 2', 'B. 12', 'C. 21', 'D. 100']
+ques4=['A. Bryan Cranston', 'B. Chris Evans', 'C. Snoop Dogg', 'D. Arnold Schwarzenegger']
+ques5=['A. False', 'B. Apple', 'C. The Sky', 'D. Saltwater']
+score = 0
+wrong = 0
+def question1():
+    print("Question one! What color is the sky?")
+    for ques in ques1:
+        print(ques)
+    ans1=input("")
+    if ans1 == "A":
+        score=+1
+        print("Correct answer! You get one point! You currently have a score of ",score," !")
+    elif ans1 == "B":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans1 == "C":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans1 == "D":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    else:
+        print("Input something valid! A, B, C, or D!")
+def question2():
+    print("Question Two! What liquid is the ocean made of?")
+    for ques in ques2:
+        print(ques)
+    ans2=input("")
+    if ans2 == "B":
+        score=+1
+        print("Correct answer! You get one point! You currently have a score of ",score," !")
+    elif ans2 == "A":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans2 == "C":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans2 == "D":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    else:
+        print("Input something valid! A, B, C, or D!")
+def question3():
+    print("Question Three! What is the legal drinking age in Ohio?")
+    for ques in ques3:
+        print(ques)
+    ans3=input("")
+    if ans3 == "C":
+        score=+1
+        print("Correct answer! You get one point! You currently have a score of ",score," !")
+    elif ans3 == "A":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans3 == "B":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans3 == "D":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    else:
+        print("Input something valid! A, B, C, or D!")
+def question4():
+    print("Question Four! Who played the teminator in the movie Terminator?")
+    for ques in ques4:
+        print(ques)
+    ans4=input("")
+    if ans4 == "D":
+        score=+1
+        print("Correct answer! You get one point! You currently have a score of ",score," !")
+    elif ans4 == "A":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans4 == "C":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans4 == "B":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    else:
+        print("Input something valid! A, B, C, or D!")
+def question5():
+    print("Question Five! What is the opposite of true?")
+    for ques in ques5:
+        print(ques)
+    ans5=input("")
+    if ans5 == "A":
+        score=+1
+        print("Correct answer! You get one point! You currently have a score of ",score," !")
+    elif ans5 == "B":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans5 == "C":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    elif ans5 == "D":
+        wrong=+1
+        print("Uh oh, wrong answer! You currently have a score of ",score," !")
+    else:
+        print("Input something valid! A, B, C, or D!")
+def scoretotal():
+    print("In the end you got a total of ",score," correct and ",wrong, " wrong.")
+def playagain():
+    print("Want to play again without fully restarting? I don't know how to let you!")
+def main():
+    print("Time to play a trivia game! You will be asked a list of questions in order! Answer with an uppercase A, B, C, or D.")
+    question1()
+    question2()
+    question3()
+    question4()
+    question5()
+    scoretotal()
+main()
